@@ -71,6 +71,11 @@
     padding-left: 1rem;
 }
 
+.footer_sec1_textbox a{
+    text-decoration: none;
+    color: var(--primary_white);
+}
+
 @media only screen and (max-width: 768px) {
     .footer_sec1_textbox h5 {
         font-size: 80%;
