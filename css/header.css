@@ -22,7 +22,9 @@
     --secondary_dark_gray: #232323;
     /* dark Gray */
     --default_font: #0000;
-    /* black */
+    /* font black */
+    --default_font_a: #ffff;
+    /*font white*/
 
 
     --dark_purple_right: linear-gradient(to right, #2D2D2D, #950051);
