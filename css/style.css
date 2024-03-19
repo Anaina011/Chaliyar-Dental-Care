@@ -141,6 +141,7 @@ word-spacing: 3px;
   .home-slideshow-left {
  padding-top: 0;
   width: 80%;
+
   }
 
   .home-slideshow-left-content h2 {
@@ -335,5 +336,26 @@ word-spacing: 3px;
 .contact_map{
   width: 100;
   height: auto;
+}
+
+=======
+  }
+
+  .home-slideshow-left-content h2 {
+    font-size: 16px;
+  }
+
+  .home-slideshow-left-box-left img{
+    display: none;
+  }
+
+  .home-slideshow-left-box-right{
+
+  }
+  
+  .home-slideshow-left-box-right h5{
+  font-size: 12px;
+  }
+  
 }
 

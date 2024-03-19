@@ -180,7 +180,7 @@ justify-content: space-between;
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: white;
+        background-color: var(--primary_white);
         z-index: 1000;
     }
 
