@@ -151,12 +151,29 @@ word-spacing: 3px;
     display: none;
   }
 
-  .home-slideshow-left-box-right{
+  /* .home-slideshow-left-box-right{
+padding-top: 0;
+  } */
+
+  .home-slideshow-left-box-rightside{
+    border-radius: 1rem;
+    background-image: var(--dark_purple_top);
+    /* padding: 10%; */
+    color: var(--default_font_a);
+  padding: 3%;
 
   }
   
+  .home-slideshow-left-box-rightside-content{
+    display: flex;
+    padding-bottom: 1%;
+  }
+  .home-slideshow-left-box-left {
+    display: none;
+  }
   .home-slideshow-left-box-right h5{
-  font-size: 12px;
+  font-size: 11px;
+  padding-bottom: 0;
   }
   
 }
