@@ -157,6 +157,11 @@ width: 50%;
   padding-right: 8%;
   display: flex;
   text-align: center;
+  position: relative;
+  bottom: 7rem;
+  left: 0;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .home-book-appointment-content {
@@ -208,6 +213,178 @@ width: 50%;
   background-color: var(--default_font_a);
   color: var(--primary_purple);
 }
+
+.home-book-appointment-details-btn {
+  padding: 4%;
+}
+
+.home-book-appointment-details-btn button {
+  padding: 7%;
+  width: 100%;
+  border-radius: 1rem;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--default_font_a);
+  background-color: var(--primary_purple);
+}
+
+.home-book-appointment-details-btn button:hover {
+  background-color: var(--default_font_a);
+  color: var(--primary_purple);
+}
+
+.home-all-services {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8%;
+  padding-right: 8%;
+
+
+}
+
+.home-all-services {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.home-all-services-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.home-all-services-heading h3 {
+  background-color: var(--secondary_dark_purple);
+  color: var(--default_font_a);
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1;
+}
+
+.home-all-services h2 {
+  font-size: 51px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.home-all-services-card {
+  width: 100%;
+  padding: 1%;
+  height: auto;
+  background-color: var(--primary_purple);
+  position: relative;
+}
+
+.home-all-services-front-card {
+  background-color: var(--primary_white);
+  border-radius: 1rem;
+  display: flex;
+  align-items: start;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 12%;
+  padding-bottom: 12%;
+  flex-direction: column;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.home-all-services-card-content-front-content h4 {
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 7%;
+  padding-bottom: 35%;
+}
+
+.home-all-services-card-content-front-content img {
+  height: auto;
+  width: 25%;
+}
+
+.home-all-services-card-content-front-content button {
+  border-radius: 2rem;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 17px;
+  background-color: var(--primary_black);
+  color: var(--primary_white);
+}
+
+.home-all-services-content-points {
+  display: flex;
+}
+
+.home-all-services-content p {
+  color: var(--default_font_a);
+  font-size: 27px;
+  font-weight: 500;
+  padding-top: 6%;
+}
+
+.home-all-services-content-points i {
+  padding-right: 3%;
+  font-size: 25px;
+  color: var(--primary_white);
+}
+
+.home-all-services-content-points h5 {
+  color: var(--default_font_a);
+  padding: 2%;
+}
+
+.home-all-services-content button {
+  margin-top: 10%;
+  border-radius: 2rem;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 17px;
+  background-color: var(--primary_black);
+  color: var(--primary_white);
+}
+
+.home-all-services-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translateX(-96%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+
+.home-all-services-card:hover .home-all-services-content {
+  transform: translateY(0);
+  background-color: var(--primary_purple);
+}
+
+.home-all-services-card:hover .home-all-services-card-content-front-content {
+  transform: translateX(-10%);
+}
+
+.home-all-services-card:hover .home-all-services-card-content-front-content h4 .home-all-services-card-content-front-content img .home-all-services-card-content-front-content button {
+  opacity: 0;
+}
+
+
 
 @media only screen and (max-width: 768px) {
 
@@ -265,11 +442,32 @@ padding-top: 0;
     line-height: 10px;
   }
 
+  .home-book-appointment {
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    bottom: 3rem;
+    left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
-/* @media only screen and (min-width: 768px) and (max-width:991px ) {
-
-} */
+@media only screen and (min-width: 768px) and (max-width:991px) {
+  .home-book-appointment {
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    bottom: 3rem;
+    left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-slideshow-image img {
@@ -346,10 +544,31 @@ padding-top: 0;
     word-spacing: 1px;
   }
 
+  .home-book-appointment {
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    bottom: 3rem;
+    left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 /* @media only screen and (min-device-width: 1200px){
-
+  .home-book-appointment {
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    bottom: 3rem;
+    left: 0;
+    width: 100%;
+    margin-bottom: 10px; 
+  }
 } */
 
 
