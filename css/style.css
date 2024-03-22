@@ -89,15 +89,19 @@
 
 .rotateImg {
   height: auto;
-  animation: rotateImage 5s infinite alternate; /* adjust timing as needed */
+  animation: rotateImage 5s infinite alternate;
+  /* adjust timing as needed */
 }
 
 @keyframes rotateImage {
   0% {
-    transform: rotate(10deg); /* rotate clockwise */
+    transform: rotate(10deg);
+    /* rotate clockwise */
   }
+
   100% {
-    transform: rotate(-15deg); /* rotate anticlockwise */
+    transform: rotate(-15deg);
+    /* rotate anticlockwise */
   }
 }
 
@@ -224,6 +228,9 @@ width: 50%;
   left: 0;
   width: 100%;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-book-appointment-content {
@@ -253,6 +260,7 @@ width: 50%;
 .home-book-appointment-details input {
   padding: 7%;
   width: 100%;
+  border: 0;
   border-radius: 1rem;
   font-size: 22px;
 }
@@ -335,7 +343,7 @@ width: 50%;
 }
 
 
-.home-all-services-card-container{
+.home-all-services-card-container {
 
   /* background-color: var(--primary_purple); */
 }
@@ -401,12 +409,13 @@ width: 50%;
   width: 100%;
   text-align: left;
   padding: 0 1rem;
-  margin-top: 1rem; /* Adjust to align with title */
+  margin-top: 1rem;
+  /* Adjust to align with title */
 }
 
 /* Points Styling */
 .home-all-services-card-content .home-all-services-card-points i {
-  
+
   color: var(--primary_white);
   font-size: 22px;
 }
@@ -414,7 +423,7 @@ width: 50%;
 .home-all-services-card-content .home-all-services-card-points h5 {
   font-size: 20px;
   color: var(--default_font_a);
- 
+
 }
 
 /* Hover Effect */
@@ -441,9 +450,10 @@ width: 50%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: -80px; /* Adjusted to remove gap */
+  margin-top: -80px;
+  /* Adjusted to remove gap */
   margin-bottom: 10px;
- 
+
 }
 
 .home-all-services-card:hover .home-all-services-card-content .home-all-services-card-points i {
@@ -499,6 +509,21 @@ width: 50%;
 
 
 @media only screen and (max-width: 768px) {
+  .home-book-appointment-content h3 {
+    font-size: 25px;
+  }
+
+  .home-book-appointment-details input {
+    padding: 2%;
+    width: 100%;
+    border: 0;
+    border-radius: 1rem;
+    font-size: 22px;
+  }
+
+  .home-book-appointment-details-btn button {
+    padding: 2%;
+  }
 
   .home-slideshow-image img {
     width: 100%;
@@ -709,6 +734,76 @@ padding-top: 0;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home_faq {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_faq h2 {
+  font-weight: bold;
+}
+
+.home_faq_container {
+  width: 85%;
+  height: auto;
+  margin-top: 4rem;
+}
+
+.home_faq_question_container {
+  border: 1px solid var(--secondary_dark_gray);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+}
+
+.home_faq_question_container h5 {
+  font-weight: 600;
+}
+
+.home_faq_question_container i {
+  font-size: 200%;
+  color: var(--primary_purple);
+}
+
+.answer {
+  display: none; /* Initially hide the answer */
+  margin-top: 1rem;
+}
+
+.active {
+  display: block; /* Show the answer when active */
+}
 
 
 

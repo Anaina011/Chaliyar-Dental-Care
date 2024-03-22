@@ -125,12 +125,13 @@ vertical-align: sub;
     border-width: revert;
 }
 .navbar-collapse{
-    justify-content:space-evenly;
+    justify-content:space-around;
+    
 }
 .navbar-nav{
     display: flex;
-    justify-content: space-evenly;
-
+    width: 100%;
+    justify-content: space-around;
 }
 /* .nav-link a{
 display: flex;
@@ -169,7 +170,13 @@ justify-content: space-between;
     .header_navbar-top{
         display: none;
     }
-
+    .navbar-collapse{
+        justify-content:space-around;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
 }
 
 /* Update your existing CSS */
