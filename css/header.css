@@ -166,7 +166,7 @@ justify-content: space-between;
     background-image: var(--dark_purple_right);
   }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1049.98px) {
     .header_navbar-top{
         display: none;
     }
@@ -180,7 +180,7 @@ justify-content: space-between;
 }
 
 /* Update your existing CSS */
-@media (max-width: 991.98px) {
+@media (max-width: 1049.98px) {
     .navbar-collapse {
         display: none;
         position: absolute;

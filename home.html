@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+</head>
+
+<body>
+    <style>
+        * {
+            border: 1px solid red;
+        }
+
+        .body {
+            margin: 0;
+        }
+
+        .home-slideshow {
+            margin: 0;
+            position: relative;
+        }
+
+        .home-slideshow-image {
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+
+        .home-slideshow-container {
+            position: relative;
+            width: 100%;
+            margin: auto;
+        }
+
+        .home-slideshow-image {
+            display: none;
+        }
+
+        .home-slideshow-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero_sec1 {
+            width: 50%;
+            height: auto;
+
+            border-top-right-radius: 15rem;
+            border-top-left-radius: 0.4rem;
+            border-bottom-right-radius: 0.4rem;
+            border-bottom-left-radius: 0.4rem;
+
+            background-color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+
+        .hero_sec1_content_container {
+            width: 80%;
+            height: auto;
+            margin-left: 5%;
+        }
+
+        .hero_sec1_content_container h2 {
+            width: 100%;
+            font-size: 350%;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .hero_sec1_content_container h2 {
+                width: 100%;
+                font-size: 250%;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /* CSS for typing animation */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        #typingText {
+            overflow: hidden;
+            border-right: .15em solid orange;
+            /* Change this to match your background color */
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 5s steps(40, end) infinite;
+            /* Looping animation */
+        }
+    </style>
+
+
+    <section class="home-slideshow">
+        <div class="home-slideshow-container">
+            <div class="home-slideshow-image">
+                <img src="img/Home-landing-image1.png" alt="Image 1">
+            </div>
+            <div class="home-slideshow-image">
+                <img src="img/Home-landing-image2.png" alt="Image 2">
+            </div>
+            <div class="home-slideshow-image">
+                <img src="img/Home-landing-image3.png" alt="Image 3">
+            </div>
+            <div class="home-slideshow-image">
+                <img src="img/Home-landing-image4.png" alt="Image 4">
+            </div>
+        </div>
+        <div class="hero_sec1">
+            <div class="hero_sec1_content_container">
+                <h2 id="typingText">Smile Bright: Your Premier Dental Destination</h2>
+                <script>
+                    // JavaScript to trigger animation
+                    window.onload = function () {
+                        document.getElementById("typingText").style.animationPlayState = "running";
+                    };
+
+                </script>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="js/landing-slider.js"></script>
+</body>
+
+</html>
