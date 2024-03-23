@@ -19,13 +19,13 @@
   --primary_black: #000000;
   /* black */
   --primary_baby_pink_dark: #F1DCE7;
-  /*dark baby pink*/
+  /* /dark baby pink/ */
   --primary_baby_pink_light: #eee0e7;
-  /*light baby pink*/
+  /* /light baby pink/ */
   --secondary_dark_purple: #2D2D2D;
   /* dark purple */
   --secondary_lighter_gray: #CBCBCB;
-  /*very light gray*/
+  /* /very light gray/ */
   --secondary_light_gray: #787878;
   /* light Gray */
   --secondary_dark_gray: #232323;
@@ -312,200 +312,79 @@ width: 50%;
 
 } */
 
-.home-all-services {
-  display: flex;
-  flex-direction: column;
-  padding-left: 8%;
-  padding-right: 8%;
+.home-about-left {
+  padding: 0;
 }
 
-.home-all-services-heading {
-  display: flex;
-  justify-content: center;
+.home-about-head{
+    display: flex;
+    justify-content: center;
+  
 }
 
-.home-all-services-heading h3 {
+
+.home-about-head h3{
   background-color: var(--secondary_dark_purple);
   color: var(--default_font_a);
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.8rem;
   border-radius: 1.5rem;
-  font-size: 20px;
+  font-size: 1.6rem;
   font-weight: 300;
   margin: 0;
   line-height: 1;
-}
 
-.home-all-services h2 {
-  font-size: 51px;
-  font-weight: 600;
-  text-align: center;
-  padding-bottom: 5%;
 }
 
 
-.home-all-services-card-container {
-
-  /* background-color: var(--primary_purple); */
-}
-
-.home-all-services-card {
-  position: relative;
+.home-about-wrapper1 {
   width: 100%;
-  padding: 1rem;
-  background-color: var(--primary_white);
-  border-radius: 1rem;
-  border: 1px solid;
-  transition: background-color 0.2s ease-in-out;
-  overflow: hidden;
-
-}
-
-/* Card Content */
-.home-all-services-card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  text-align: start;
-  padding-left: 9%;
-}
-
-/* Title */
-.home-all-services-card-content h4 {
-  font-size: 22px;
-  font-weight: 600;
-  padding-top: 7%;
-  padding-bottom: 35%;
-  margin: 0;
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Image */
-.home-all-services-card-content img {
-  padding-top: 13%;
-  width: 25%;
   height: auto;
-  margin-bottom: 1rem;
+
 }
 
-/* Button */
-.home-all-services-card-content button {
-  border-radius: 2rem;
-  font-size: 17px;
-  background-color: var(--primary_black);
-  color: var(--primary_white);
-  transition: transform 0.3s ease-in-out;
-  border-radius: 2rem;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
-  font-size: 17px;
-  margin-bottom: 8%;
-}
-
-/* Points Container */
-.home-all-services-card-content .home-all-services-card-points {
-  display: none;
+.home-about-wrapper2 {
   width: 100%;
-  text-align: left;
-  padding: 0 1rem;
-  margin-top: 1rem;
-  /* Adjust to align with title */
-}
-
-/* Points Styling */
-.home-all-services-card-content .home-all-services-card-points i {
-
-  color: var(--primary_white);
-  font-size: 22px;
-}
-
-.home-all-services-card-content .home-all-services-card-points h5 {
-  font-size: 20px;
-  color: var(--default_font_a);
-
-}
-
-/* Hover Effect */
-.home-all-services-card:hover {
-  background-color: var(--primary_purple);
-}
-
-.home-all-services-card:hover img {
-  display: none;
-}
-
-.home-all-services-card:hover .home-all-services-card-content h4 {
-  transform: translateY(-30px);
-  margin-top: 12%;
-  color: var(--default_font_a);
-  font-size: 25px;
-}
-
-.home-all-services-card:hover .home-all-services-card-content button {
-  transform: translateY(20px);
-}
-
-.home-all-services-card:hover .home-all-services-card-content .home-all-services-card-points {
+  height: auto;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  margin-top: -80px;
-  /* Adjusted to remove gap */
-  margin-bottom: 10px;
-
+  justify-content: center;
+  flex-direction: column;
 }
-
-.home-all-services-card:hover .home-all-services-card-content .home-all-services-card-points i {
-  margin-right: 15px;
-}
-
-/*
-.home-all-services-card {
-  width: 100%;
-  padding: 1%;
-  height: auto;
-  background-color: var(--primary_purple);
-  position: relative;
-}
-
- .home-all-services-card {
-  background-color: var(--primary_purple);
-  border-radius: 1rem;
-
+.home-about-right{
+  padding: 0;
   display: flex;
-  align-items: start;
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
-.home-all-services-card-content h4 {
-  font-size: 22px;
+.home-about-right-container h2 {
   font-weight: 600;
-  padding-top: 7%;
-  padding-bottom: 35%;
+  margin-top: 3%;
+font-size: 4rem;
+color: var(--primary_black);
+text-align: center;
 }
 
-.home-all-services-card-content img {
+.home-about-right-container h6 {
+  font-size: 1rem;
+  line-height: 2.2rem;
+  margin-top: 10%;
+width: 80%;
+text-align: justify;
+}
+
+.home-about-img-container{
+  padding-left: 25%;
+  padding-top: 18%;
+  width: 100%;
   height: auto;
-  width: 25%;
 }
 
-.home-all-services-card-content button {
-  border-radius: 2rem;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
-  font-size: 17px;
-  background-color: var(--primary_black);
-  color: var(--primary_white);
+.home-about-img-container img{
+  width: 90%;
+  height: auto;
 }
-*/
-
 
 
 @media only screen and (max-width: 768px) {
@@ -590,7 +469,24 @@ padding-top: 0;
     width: 100%;
     margin-bottom: 10px;
   }
+
+
+
+.home-about-img-container{
+  display: none;
 }
+
+.home-about-wrapper1{
+  background-image: url(../img/home-aboutus.png);
+  background-repeat: no-repeat;
+}
+.home-about-wrapper2{
+  background-color: #ffffffa6;
+}
+
+
+}
+
 
 @media only screen and (min-width: 768px) and (max-width:991px) {
   .home-book-appointment {
@@ -605,6 +501,8 @@ padding-top: 0;
     margin-bottom: 10px;
   }
 }
+
+
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-slideshow-image img {
@@ -1436,37 +1334,3 @@ padding-top: 0;
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .home-slideshow-left-content h2 {
-    font-size: 16px;
-  }
-
-  .home-slideshow-left-box-left img{
-    display: none;
-  }
-
-  .home-slideshow-left-box-right{
-
-  }
-  
-  .home-slideshow-left-box-right h5{
-  font-size: 12px;
-  }
-   */
