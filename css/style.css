@@ -112,19 +112,12 @@
 
 /* animations */
 
+
+
+
 .default_bold {
   font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .home-slideshow-image {
@@ -328,10 +321,6 @@ width: 50%;
 .home-about-head {
   display: flex;
   justify-content: center;
-}
-.home-about-head {
-  display: flex;
-  justify-content: center;
 
 }
 
@@ -388,7 +377,6 @@ width: 50%;
   text-align: justify;
 }
 
-.home-about-img-container {}
 .home-about-img-container {
   padding-left: 25%;
   padding-top: 18%;
@@ -396,7 +384,6 @@ width: 50%;
   height: auto;
 }
 
-.home-about-img-container img {}
 .home-about-img-container img {
   width: 90%;
   height: auto;
@@ -743,6 +730,8 @@ font-weight: bold;
 
 
 @media only screen and (max-width: 768px) {
+
+
   .home-book-appointment-content h3 {
     font-size: 25px;
   }
@@ -754,12 +743,31 @@ font-weight: bold;
     border-radius: 1rem;
     font-size: 22px;
   }
-}
 
-@media only screen and (min-width: 1465px) {
-  /* Apply display: none; for screen sizes larger than 1464px */
-  .hero_sec1_content_container h2{
-      display: none;
+  .home-book-appointment-details-btn button {
+    padding: 2%;
+  }
+
+  .home-slideshow-image img {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .home-slideshow-left {
+    padding-top: 0;
+    width: 80%;
+    border-radius: 0;
+    left: 0%;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .home-slideshow-left-content h2 {
+    font-size: 16px;
+
+  }
+
+  .home-slideshow-left-box-left img {
+    display: none;
   }
 
   /* .home-slideshow-left-box-right{
@@ -808,17 +816,18 @@ padding-top: 0;
 
 
 
-.home-about-img-container{
-  display: none;
-}
+  .home-about-img-container {
+    display: none;
+  }
 
-.home-about-wrapper1{
-  background-image: url(../img/home-aboutus.png);
-  background-repeat: no-repeat;
-}
-.home-about-wrapper2{
-  background-color: #ffffffa6;
-}
+  .home-about-wrapper1 {
+    background-image: url(../img/home-aboutus.png);
+    background-repeat: no-repeat;
+  }
+
+  .home-about-wrapper2 {
+    background-color: #ffffffa6;
+  }
 
 
 }
@@ -837,40 +846,110 @@ padding-top: 0;
     margin-bottom: 10px;
   }
 }
-@media only screen and (max-width: 520px) {
-  .hero_sec1_content_container h2 {
-    font-size: 150%;
-  }
-}
 
 
 
-/* CSS for typing animation */
-/* @keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-slideshow-image img {
     width: 100%;
+    height: 50vh;
+  }
+
+  .home-slideshow-left {
+    position: absolute;
+    margin-left: 8%;
+    top: 10%;
+    left: 20px;
+    background-color: var(--primary_white);
+    padding: 10px;
+    border-top-right-radius: 200px;
+    width: 55%;
+  }
+
+  .home-slideshow-left-content {
+    height: auto;
+    /* color: var(--primary_purple); */
+  }
+
+  .home-slideshow-left-content h2 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 5%;
+  }
+
+  .home-slideshow-left-box-left {
+    height: auto;
+
+    /* background-color: var(--secondary_light_gray); */
+    padding: 1%;
+  }
+
+
+  .home-slideshow-left-box-left img {
+    width: 14rem;
+  }
+
+  .home-slideshow-left-box-right {
+    height: auto;
+    /* background-color: var(--primary_purple); */
+
+    padding: 1%;
+  }
+
+  .home-slideshow-left-box-rightside {
+    border-radius: 1rem;
+    background-image: var(--dark_purple_top);
+    padding: 7%;
+    color: var(--default_font_a);
+
+  }
+
+  .home-slideshow-left-box-rightside-content {
+    display: flex;
+    padding-bottom: 4%;
+  }
+
+  .home-slideshow-left-box-rightside-content h5 {
+    font-size: 16px;
+  }
+
+  .home-slideshow-left-box-rightside-content i {
+    padding-right: 3%;
+  }
+
+  .home-slideshow-left-description h4 {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+    word-spacing: 1px;
+  }
+
+  .home-book-appointment {
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    bottom: 3rem;
+    left: 0;
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
-#typingText {
-  overflow: hidden;
-  border-right: .15em solid orange;
-
-  white-space: nowrap;
-  margin: 0 auto;
-  animation: typing 5s steps(40, end);
-}  */
-
-
-
-
-
-
-
+/* @media only screen and (min-device-width: 1200px){
+  .home-book-appointment {
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    bottom: 3rem;
+    left: 0;
+    width: 100%;
+    margin-bottom: 10px; 
+  }
+} */
 
 
 
@@ -883,67 +962,71 @@ padding-top: 0;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
 .home_faq {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  margin-bottom: 4rem;
-}
-
-.home_services_cards_column {
-  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-
-/* flipper cards */
-.three-d-card {
-  position: relative;
-  width: 20rem;
-  height: 20rem;
-  perspective: 1000px;
-  margin-top: 1rem;
+.home_faq h2 {
+  font-weight: bold;
 }
 
-.card-wrapper {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
+.home_faq_container {
+  width: 85%;
+  height: auto;
+  margin-top: 4rem;
 }
 
-.three-d-card:hover .card-wrapper {
-  transform: rotateY(180deg);
-}
-
-.card-face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 2rem;
-  backface-visibility: hidden;
-  display: flex;
-  justify-content: center;
-  border: 1px solid var(--secondary_dark_purple);
-  border-radius: 15px;
-  background-color: #fff;
-}
-
-.card-face.front {
-  transform: rotateY(0deg);
-}
-
-.card-face.back {
-  transform: rotateY(180deg);
-  background-color: var(--primary_purple);
-  color: var(--primary_white);
-  border: 0;
-}
-
-.card-description_checklist {
+.home_faq_question_container {
+  border: 1px solid var(--secondary_dark_gray);
+  border-radius: 1rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
