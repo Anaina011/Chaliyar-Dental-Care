@@ -195,3 +195,19 @@ justify-content: space-between;
         display: block;
     }
 }
+
+
+/* @media only screen and (min-width: 574px) and (max-width: 992px) {
+    .navbar-collapse {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary_white);
+        z-index: 1000;
+    }
+    .navbar-collapse.show {
+        display: block;
+    }
+} */
