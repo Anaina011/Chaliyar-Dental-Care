@@ -76,47 +76,47 @@
     align-items: center;
 
 }
-.header_navbar-top_elements a{
+
+.header_navbar-top_elements a {
     text-decoration: none;
     color: var(--primary_white);
     font-size: 12px;
 }
 
-.header-navbar-top-right{
+.header-navbar-top-right {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header-navbar-top-right img{
+.header-navbar-top-right img {
     width: 27px;
 }
 
-.header-navbar{
+.header-navbar {
     padding-left: 8%;
     padding-right: 8%;
 }
 
 .navbar-brand img {
-height: auto;
-width: 14rem;
-vertical-align: sub;
+    height: auto;
+    width: 14rem;
 }
 
 
 
-.header-navbar li>a{
+.header-navbar li>a {
     font-weight: 600;
     font-size: 20px;
     color: var(--secondary_dark_gray);
 }
 
-.navbar-collapse-left{
-    justify-content:space-evenly;
+.navbar-collapse-left {
+    justify-content: space-evenly;
 }
 
 .header-navbar .btn {
-  
+
     width: 13rem;
     height: 3rem;
     font-weight: 600;
@@ -124,15 +124,18 @@ vertical-align: sub;
     border-radius: 18px;
     border-width: revert;
 }
-.navbar-collapse{
-    justify-content:space-around;
-    
+
+.navbar-collapse {
+    justify-content: space-around;
+
 }
-.navbar-nav{
+
+.navbar-nav {
     display: flex;
     width: 100%;
     justify-content: space-around;
 }
+
 /* .nav-link a{
 display: flex;
 justify-content: space-between;
@@ -145,7 +148,7 @@ justify-content: space-between;
     padding-top: 0%;
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
     border-color: var(--primary_purple) !important;
     color: black !important;
 }
@@ -157,16 +160,16 @@ justify-content: space-between;
 }
 
 .header-navbar .nav-item .nav-link.active {
-   color: var(--primary_purple);
+    color: var(--primary_purple);
 }
 
 
 
 .btn-outline-primary:hover {
     background-image: var(--dark_purple_right);
-  }
+}
 
-@media only screen and (max-width: 1049.98px) {
+/* @media only screen and (max-width: 1049.98px) {
     .header_navbar-top{
         display: none;
     }
@@ -177,10 +180,14 @@ justify-content: space-between;
         border-bottom-left-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
     }
-}
+} */
 
 /* Update your existing CSS */
 @media (max-width: 1049.98px) {
+    .header_navbar-top {
+        display: none;
+    }
+
     .navbar-collapse {
         display: none;
         position: absolute;
@@ -193,6 +200,9 @@ justify-content: space-between;
 
     .navbar-collapse.show {
         display: block;
+    }
+    .navbar-header-btn{
+        display: none;
     }
 }
 
