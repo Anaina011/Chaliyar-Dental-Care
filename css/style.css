@@ -51,70 +51,6 @@
 
 
 
-/* animations */
-
-/* Add your existing animations */
-
-.animate {
-  opacity: 0;
-  transition: opacity 1s, transform 1s;
-}
-
-.fadeLeft.animate {
-  transform: translateX(-60px);
-}
-
-.fadeRight.animate {
-  transform: translateX(60px);
-}
-
-.fadeInUp.animate {
-  transform: translateY(60px);
-}
-
-.fadeInDown.animate {
-  transform: translateY(-60px);
-}
-
-.animate.fade-in {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-
-
-
-
-
-
-
-
-.rotateImg {
-  height: auto;
-  animation: rotateImage 5s infinite alternate;
-  /* adjust timing as needed */
-}
-
-@keyframes rotateImage {
-  0% {
-    transform: rotate(10deg);
-    /* rotate clockwise */
-  }
-
-  100% {
-    transform: rotate(-15deg);
-    /* rotate anticlockwise */
-  }
-}
-
-
-
-
-/* animations */
-
-
-
-
 .default_bold {
   font-weight: bold;
 }
@@ -408,7 +344,7 @@ width: 50%;
 
 
 } */
-.home-about-sec1{
+.home-about-sec1 {
   padding-bottom: 5%;
 }
 
@@ -493,16 +429,16 @@ width: 50%;
   .home-about-left {
     display: none;
   }
-  
+
   .home-about-wrapper1 {
     background-image: url(../img/home-aboutus.png);
     background-repeat: no-repeat;
   }
-  
+
   .home-about-wrapper2 {
     background-color: #ffffffa6;
   }
-  }
+}
 
 
 
@@ -706,7 +642,7 @@ width: 50%;
   padding-left: 8%;
   padding-right: 8%;
   padding-top: 7%;
-  
+
   display: flex;
   text-align: center;
   align-items: center;
@@ -751,7 +687,7 @@ width: 50%;
 
 .home-sequence-head {
   display: flex;
- 
+
   align-items: center;
   flex-direction: column;
 }
@@ -771,13 +707,17 @@ width: 50%;
   padding-bottom: 15%;
 }
 
-.home-sequence-wrapper1, .home-sequence-wrapper3, .home-sequence-wrapper5{
+.home-sequence-wrapper1,
+.home-sequence-wrapper3,
+.home-sequence-wrapper5 {
   width: 100%;
   height: auto;
 
 }
 
-.home-sequence-wrapper2, .home-sequence-wrapper4, .home-sequence-wrapper6 {
+.home-sequence-wrapper2,
+.home-sequence-wrapper4,
+.home-sequence-wrapper6 {
   width: 100%;
   height: auto;
   display: flex;
@@ -786,16 +726,16 @@ width: 50%;
   flex-direction: column;
 }
 
-.home-sequence-img{
+.home-sequence-img {
   width: 100%;
   position: relative;
   bottom: 0;
   left: 0;
 }
 
-.home-sequence-img img{
-width: 85%;
-bottom: 4rem;
+.home-sequence-img img {
+  width: 85%;
+  bottom: 4rem;
 }
 
 
@@ -805,46 +745,50 @@ bottom: 4rem;
     background: linear-gradient(to bottom, var(--primary_baby_pink_light) 100%, var(--primary_white) 100%);
 
   }
+
   .home-sequence-sec img {
     display: none;
   }
-  
-  .home-sequence-wrapper1{
+
+  .home-sequence-wrapper1 {
     background-image: url(../img/home-sequence-img1.png);
     background-repeat: no-repeat;
   }
 
-  .home-sequence-wrapper3{
+  .home-sequence-wrapper3 {
     background-image: url(../img/home-sequence-img2.png);
     background-repeat: no-repeat;
   }
-  .home-sequence-wrapper5{
+
+  .home-sequence-wrapper5 {
     background-image: url(../img/home-sequence-img3.png);
     background-repeat: no-repeat;
   }
 
-  .home-sequence-wrapper2{
+  .home-sequence-wrapper2 {
     background-color: #ffffffb0;
     padding: 4%;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
   }
-  .home-sequence-wrapper4{
+
+  .home-sequence-wrapper4 {
     background-color: #ffffffb0;
     padding: 4%;
   }
-  .home-sequence-wrapper6{
+
+  .home-sequence-wrapper6 {
     background-color: #ffffffb0;
     padding: 4%;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
   }
 
-  .home-sequence-wrapper6{
+  .home-sequence-wrapper6 {
     margin-bottom: 5%;
   }
 
-  .home-sequence-img img{
+  .home-sequence-img img {
     display: none;
   }
 }
@@ -1112,12 +1056,12 @@ padding-top: 0;
   .home-about-left {
     display: none;
   }
-  
+
   .home-about-wrapper1 {
     background-image: url(../img/home-aboutus.png);
     background-repeat: no-repeat;
   }
-  
+
   .home-about-wrapper2 {
     background-color: #ffffffa6;
   }
@@ -1212,12 +1156,12 @@ padding-top: 0;
   .home-about-left {
     display: none;
   }
-  
+
   .home-about-wrapper1 {
     background-image: url(../img/home-aboutus.png);
     background-repeat: no-repeat;
   }
-  
+
   .home-about-wrapper2 {
     background-color: #ffffffa6;
   }
