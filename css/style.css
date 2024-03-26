@@ -333,7 +333,7 @@ width: 50%;
 .home-book-appointment-content {
   background-color: var(--secondary_dark_purple);
   height: auto;
-  border-radius: 1rem;
+  border-radius: 0rem;
   padding-top: 3%;
 }
 

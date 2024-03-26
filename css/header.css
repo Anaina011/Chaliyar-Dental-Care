@@ -100,7 +100,7 @@
 
 .navbar-brand img {
     height: auto;
-    width: 14rem;
+    width: 13rem;
 }
 
 
@@ -184,6 +184,11 @@ justify-content: space-between;
 
 /* Update your existing CSS */
 @media (max-width: 1049.98px) {
+    .navbar-brand img {
+        height: auto;
+        width:8rem;
+    }
+
     .header_navbar-top {
         display: none;
     }
@@ -212,6 +217,10 @@ justify-content: space-between;
         padding: 2rem;
         border-bottom-left-radius: 3rem;
         border-bottom-right-radius: 3rem;
+    }
+    .navbar-brand img {
+        height: auto;
+        width:5rem;
     }
 }
 
