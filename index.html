@@ -1076,23 +1076,26 @@
                         will do everything efficiently and quickly!</h5>
                 </div>
                 <div class="home-appointment-input">
-                    <div class="row">
-                        <div class="home-appointment-form-sec col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                            <input placeholder="Your Name" type="text" name="" id="">
+                    <form action="php/contact_page_form.php" method="post">
+                        <div class="row">
+                            <div class="home-appointment-form-sec col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <input placeholder="Your Name" type="text" name="name" id="name">
+                            </div>
+                            <div class="home-appointment-form-sec col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <input placeholder="Phone Number" type="phone" name="phone" id="phone">
+                            </div>
                         </div>
-                        <div class="home-appointment-form-sec col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                            <input placeholder="Phone Number" type="phone" name="" id="">
+                        <div class="row">
+                            <div class="home-appointment-form-sec col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <input value="2024-04-01" type="date" name="date" id="date">
+                            </div>
+                            <div class="home-appointment-form-sec col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <input value="10:30:00" type="time" name="time" id="time">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="home-appointment-form-sec col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                            <input value="2024-04-01" type="date" name="" id="">
-                        </div>
-                        <div class="home-appointment-form-sec col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                            <input value="10:30:00" type="time" name="" id="">
-                        </div>
-                    </div>
-                    <button>MAKE AN APPOINTMENT</button>
+                        <button type="submit">MAKE AN APPOINTMENT</button>
+                    </form>
+
                 </div>
             </div>
         </div>
