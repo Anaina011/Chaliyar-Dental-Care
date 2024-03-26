@@ -9,7 +9,7 @@
     <!-- stylesheet of home -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
-    
+
     <!-- favicon -->
     <link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
 
@@ -51,7 +51,8 @@
                         Ways To
                     </div>
                     <h2 class="animate fadeInUp">Contact Us</h2>
-                    <h6 class="animate fadeInUp">Apply right now, if you need dental care, we will do everything efficiently and quickly! Or if
+                    <h6 class="animate fadeInUp">Apply right now, if you need dental care, we will do everything
+                        efficiently and quickly! Or if
                         you
                         need a free consultation.</h6>
                     <div class="contact_sec1_col1_elements animate fadeRight">
@@ -83,20 +84,24 @@
                 <div class="contact_sec1_col2_container">
                     <div class="contact_form_container">
                         <h3 class="animate fadeInDown">Dentist appointment</h3>
-                        <input class="animate fadeLeft" placeholder="Your Name" type="text" name="" id="">
-                        <input class="animate fadeRight" placeholder="Phone Number" type="text" name="" id="">
-                        <select class="animate fadeLeft" id="Dentist" name="">
-                            <option value="">Choose Your Dentist (Optional)</option>
-                            <option value="Dentist A">Dentist A</option>
-                            <option value="Dentist B">Dentist B</option>
-                            <option value="Dentist C">Dentist C</option>
-                            <option value="Dentist D">Dentist D</option>
-                        </select>
-                        <input class="animate fadeRight" value="2024-04-01" placeholder="Appointment Date" type="date" name="" id="">
-                        <button type="submit" >MAKE AN APPOINTMENT</button>
+                        <form action="php/contact_page_form.php" method="post">
+                            <input required class="animate fadeLeft" placeholder="Your Name" type="text" name="name"
+                                id="name">
+                            <input required class="animate fadeRight" placeholder="Phone Number" type="text"
+                                name="phone" id="phone">
+                            <select required class="animate fadeLeft" id="dentist" name="dentist">
+                                <option value="">Choose Your Dentist (Optional)</option>
+                                <option value="Dentist A">Dentist A</option>
+                                <option value="Dentist B">Dentist B</option>
+                                <option value="Dentist C">Dentist C</option>
+                                <option value="Dentist D">Dentist D</option>
+                            </select>
+                            <input required class="animate fadeRight" value="2024-04-01" placeholder="Appointment Date"
+                                type="date" name="date" id="date">
+                            <button type="submit">MAKE AN APPOINTMENT</button>
+                        </form>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

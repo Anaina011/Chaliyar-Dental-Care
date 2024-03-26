@@ -3,16 +3,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data
     $name = $_POST['name'];
     $phone = $_POST['phone'];
-    $dentist = $_POST['dentist'];
     $date = $_POST['date'];
+    $time = $_POST['time'];
 
     // Compose email message
     $to = "manastom670@gmail.com";
     $subject = "Dentist Appointment Request";
     $message = "Name: $name\n";
     $message .= "Phone Number: $phone\n";
-    $message .= "Dentist: $dentist\n";
     $message .= "Date: $date\n";
+    $message .= "Time: $time\n";
 
     // Additional headers
     $headers = "From: $name\r\n";

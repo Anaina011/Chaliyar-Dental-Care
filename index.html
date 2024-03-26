@@ -113,37 +113,38 @@
                         <h3 class="animate fadeInDown">Book Your Appointment</h3>
 
                         <div class="home-book-appointment-content-sec">
-                            <div class="row">
-                                <div
-                                    class="animate fadeInUp home-book-appointment-details col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                    <input placeholder="Your Name" type="text" name="" id="">
+                            <form action="php/index_form_1.php" method="post">
+                                <div class="row">
+                                    <div
+                                        class="animate fadeInUp home-book-appointment-details col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                        <input required placeholder="Your Name" type="text" name="name" id="name">
+                                    </div>
+                                    <div
+                                        class="animate fadeInUp home-book-appointment-details col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                        <input required type="tel" id="phone" name="phone" placeholder="Phone Number">
+                                    </div>
+                                    <div
+                                        class="animate fadeInUp home-book-appointment-details col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                        <input required type="email" id="email" name="email" placeholder="Email Address">
+                                    </div>
                                 </div>
-                                <div
-                                    class="animate fadeInUp home-book-appointment-details col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                    <input type="tel" id="" name="phone" placeholder="Phone Number">
+                                <div class="row">
+                                    <div
+                                        class="animate fadeInUp home-book-appointment-details col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                        <input required value="2024-04-01" placeholder="Date" type="date" name="date" id="date">
+                                        <script></script>
+                                    </div>
+                                    <div
+                                        class="animate fadeInUp home-book-appointment-details col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                        <input required type="time" id="time" name="time" placeholder="Time" value="10:30:00">
+                                    </div>
+                                    <div
+                                        class="animate fadeInUp home-book-appointment-details-btn col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                        <button type="submit">MAKE AN APPOINTMENT</button>
+                                    </div>
                                 </div>
-                                <div
-                                    class="animate fadeInUp home-book-appointment-details col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                    <input type="email" id="" name="phone" placeholder="Email Address">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div
-                                    class="animate fadeInUp home-book-appointment-details col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                    <input value="2024-04-01" placeholder="Date" type="date" name="" id="">
-                                    <script></script>
-                                </div>
-                                <div
-                                    class="animate fadeInUp home-book-appointment-details col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                    <input type="time" id="" name="Time" placeholder="Time" value="10:30:00">
-                                </div>
-                                <div
-                                    class="animate fadeInUp home-book-appointment-details-btn col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            </form>
 
-                                    <button>MAKE AN APPOINTMENT</button>
-
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -1076,7 +1077,7 @@
                         will do everything efficiently and quickly!</h5>
                 </div>
                 <div class="home-appointment-input">
-                    <form action="php/contact_page_form.php" method="post">
+                    <form action="php/index_form_2.php" method="post">
                         <div class="row">
                             <div class="home-appointment-form-sec col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <input required placeholder="Your Name" type="text" name="name" id="name">
