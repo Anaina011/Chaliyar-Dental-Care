@@ -490,7 +490,7 @@ width: 50%;
 
 @media only screen and (max-width: 768px) {
 
-  .home-about-img-container {
+  .home-about-left {
     display: none;
   }
   
@@ -934,11 +934,11 @@ bottom: 4rem;
   }
 
   .home-book-appointment-details input {
-    padding: 2%;
+    padding: 3%;
     width: 100%;
     border: 0;
     border-radius: 1rem;
-    font-size: 22px;
+    font-size: 12px;
   }
 
   .home-book-appointment-details-btn button {
@@ -1022,11 +1022,11 @@ padding-top: 0;
   }
 
   .home-book-appointment-details input {
-    padding: 2%;
+    padding: 6%;
     width: 100%;
     border: 0;
     border-radius: 1rem;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .home-book-appointment-details-btn button {
@@ -1099,16 +1099,15 @@ padding-top: 0;
   }
 
 
-
-  .home-about-img-container {
+  .home-about-left {
     display: none;
   }
-
+  
   .home-about-wrapper1 {
     background-image: url(../img/home-aboutus.png);
     background-repeat: no-repeat;
   }
-
+  
   .home-about-wrapper2 {
     background-color: #ffffffa6;
   }
@@ -1122,7 +1121,7 @@ padding-top: 0;
   }
 
   .home-book-appointment-details input {
-    padding: 2%;
+    padding: 6%;
     width: 100%;
     border: 0;
     border-radius: 1rem;
@@ -1200,15 +1199,15 @@ padding-top: 0;
 
 
 
-  .home-about-img-container {
+  .home-about-left {
     display: none;
   }
-
+  
   .home-about-wrapper1 {
     background-image: url(../img/home-aboutus.png);
     background-repeat: no-repeat;
   }
-
+  
   .home-about-wrapper2 {
     background-color: #ffffffa6;
   }
@@ -1372,6 +1371,7 @@ padding-top: 0;
 
 .active {
   display: block;
+  background-color: white;
   /* Show the answer when active */
 }
 
@@ -2280,7 +2280,7 @@ padding-top: 0;
 
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #ffffff;
 }
 
 /* Fading animation */
