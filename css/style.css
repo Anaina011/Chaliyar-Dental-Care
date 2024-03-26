@@ -877,7 +877,12 @@ width: 50%;
 
 
 
-
+@media only screen and (max-width: 400px) {
+  
+  .home-book-appointment-details-btn button {
+    font-size: 90%;
+}
+}
 
 @media only screen and (max-width: 768px) {
 
