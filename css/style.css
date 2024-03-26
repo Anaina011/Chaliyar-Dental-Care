@@ -198,7 +198,7 @@
 .home-slideshow-left-content h2 {
   font-size: 50px;
   font-weight: 600;
-  padding-top: 8%;
+  padding-top: 6%;
 }
 
 .home-slideshow-left-box-left {
@@ -914,6 +914,7 @@ width: 50%;
 
   .home-slideshow-left-content h2 {
     font-size: 16px;
+    padding-top: 0.5rem;
 
   }
 
@@ -1002,6 +1003,7 @@ padding-top: 0;
 
   .home-slideshow-left-content h2 {
     font-size: 16px;
+    padding-top: 1rem;
 
   }
 
@@ -1101,7 +1103,7 @@ padding-top: 0;
 
   .home-slideshow-left-content h2 {
     font-size: 16px;
-
+    padding-top: 1rem;
   }
 
   .home-slideshow-left-box-left img {
@@ -1658,7 +1660,7 @@ padding-top: 0;
   border-radius: 1rem;
 }
 
-.contact_form_container button{
+.contact_form_container button {
   border: 0;
   font-weight: bold;
   padding-left: 2rem;
@@ -1671,7 +1673,8 @@ padding-top: 0;
   color: var(--primary_black);
   background-color: var(--primary_white);
 }
-.contact_form_container button:hover{
+
+.contact_form_container button:hover {
   border: 1px solid var(--primary_white);
   font-weight: bold;
   padding-left: 2rem;
