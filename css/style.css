@@ -863,7 +863,7 @@ bottom: 4rem;
 
 }
 
-.home-appointment-form h4 {
+.home-appointment-head h4 {
   background-color: var(--secondary_dark_purple);
   color: var(--default_font_a);
   width: fit-content;
@@ -872,15 +872,16 @@ bottom: 4rem;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   border-radius: 1.5rem;
+  font-size: 90%;
 }
 
-.home-appointment-form h3 {
-  font-size: 350%;
+.home-appointment-head h3 {
+  font-size: 230%;
   font-weight: 600;
 }
 
-.home-appointment-form h5 {
-  font-size: 95%;
+.home-appointment-head h5 {
+  font-size: 75%;
   padding-top: 5%;
 }
 
@@ -910,6 +911,7 @@ bottom: 4rem;
   color: var(--primary_white);
   background-color: var(--primary_black);
   font-weight: bold;
+  border: 0;
 }
 
 .home-appointment-input button:hover {
