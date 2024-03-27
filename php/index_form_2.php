@@ -1,10 +1,38 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data
-    $name = $_POST['name'];
-    $phone = $_POST['phone'];
-    $date = $_POST['date'];
-    $time = $_POST['time'];
+    $name = htmlspecialchars($_POST['name']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $date = htmlspecialchars($_POST['date']);
+    $time = htmlspecialchars($_POST['time']);
+
+    // Validate name
+    if (empty($name)) {
+        echo "<script>alert('Name cannot be empty.');</script>";
+        echo "<script>window.location.href = '../contact.html';</script>";
+        exit;
+    }
+
+    // Validate phone number format
+    if (!preg_match("/^\d{10}$/", $phone)) {
+        echo "<script>alert('Invalid phone number format.');</script>";
+        echo "<script>window.location.href = '../contact.html';</script>";
+        exit;
+    }
+
+    // Validate date format (assuming date is in YYYY-MM-DD format)
+    if (!preg_match("/^\d{4}-\d{2}-\d{2}$/", $date)) {
+        echo "<script>alert('Invalid date format.');</script>";
+        echo "<script>window.location.href = '../contact.html';</script>";
+        exit;
+    }
+
+    // Validate time format (assuming time is in HH:MM format)
+    if (!preg_match("/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/", $time)) {
+        echo "<script>alert('Invalid time format.');</script>";
+        echo "<script>window.location.href = '../contact.html';</script>";
+        exit;
+    }
 
     // Compose email message
     $to = "manastom670@gmail.com";

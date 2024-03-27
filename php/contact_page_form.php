@@ -1,10 +1,24 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
-    $name = $_POST['name'];
-    $phone = $_POST['phone'];
-    $dentist = $_POST['dentist'];
-    $date = $_POST['date'];
+    // Validate and sanitize form data
+    $name = htmlspecialchars($_POST['name']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $dentist = htmlspecialchars($_POST['dentist']);
+    $date = htmlspecialchars($_POST['date']);
+
+    // Validate phone number format
+    if (!preg_match("/^\d{10}$/", $phone)) {
+        echo "<script>alert('Invalid phone number format.');</script>";
+        echo "<script>window.location.href = '../contact.html';</script>";
+        exit;
+    }
+
+    // Validate date format (assuming date is in YYYY-MM-DD format)
+    if (!preg_match("/^\d{4}-\d{2}-\d{2}$/", $date)) {
+        echo "<script>alert('Invalid date format.');</script>";
+        echo "<script>window.location.href = '../contact.html';</script>";
+        exit;
+    }
 
     // Compose email message
     $to = "manastom670@gmail.com";
@@ -21,9 +35,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send email
     if (mail($to, $subject, $message, $headers)) {
-        echo "Your appointment request has been submitted successfully. We will contact you shortly.";
+        header('Location: ../thankyou.html');
     } else {
-        echo "Failed to send appointment request. Please try again later.";
+        header('Location: ../oops.html');
     }
 }
 ?>
