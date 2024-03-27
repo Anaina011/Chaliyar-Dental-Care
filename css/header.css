@@ -125,6 +125,10 @@
     border-width: revert;
 }
 
+.header-navbar .btn:hover {
+    color: var(--primary_white);
+}
+
 .navbar-collapse {
     justify-content: space-around;
 
@@ -167,6 +171,7 @@ justify-content: space-between;
 
 .btn-outline-primary:hover {
     background-image: var(--dark_purple_right);
+    color: var(--primary_white) !important;
 }
 
 /* @media only screen and (max-width: 1049.98px) {
@@ -182,11 +187,13 @@ justify-content: space-between;
     }
 } */
 
+
+
 /* Update your existing CSS */
 @media (max-width: 1049.98px) {
     .navbar-brand img {
         height: auto;
-        width:8rem;
+        width: 8rem;
     }
 
     .header_navbar-top {
@@ -206,21 +213,24 @@ justify-content: space-between;
     .navbar-collapse.show {
         display: block;
     }
-    .navbar-header-btn{
+
+    .navbar-header-btn {
         display: none;
     }
 
-   
+
 }
+
 @media only screen and (max-width: 768px) {
     .navbar-collapse {
         padding: 2rem;
         border-bottom-left-radius: 3rem;
         border-bottom-right-radius: 3rem;
     }
+
     .navbar-brand img {
         height: auto;
-        width:5rem;
+        width: 5rem;
     }
 }
 

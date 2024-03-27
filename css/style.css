@@ -1848,8 +1848,8 @@ padding-top: 0;
 
 .about_sec2 h2 {
   font-weight: 600;
-  padding-top: 1rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
 }
 
@@ -1891,14 +1891,15 @@ padding-top: 0;
 .about_advantages_display {
   width: 100%;
   height: auto;
-
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .about_advantages_display_holder {
   background-color: var(--primary_white);
   margin-left: 7%;
   margin-right: 7%;
-  border-radius: 4rem;
+  border-radius: 2rem;
   padding: 5%;
 }
 
@@ -2130,6 +2131,12 @@ padding-top: 0;
 
   .about_sec2_cards_container {
     display: none;
+  }
+  .about_advantages_display {
+    width: 100%;
+    height: auto;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
   }
 
   .about_advantages_display_holder {
