@@ -151,6 +151,18 @@
 
 }
 
+.footer_copyright{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.footer_copyright h6{
+    font-weight: 300;
+    font-size: 80%;
+    text-align: left;
+}
+
 
 @media only screen and (max-width: 768px) {
     .footer_sec2_logo_container {
@@ -180,5 +192,14 @@
         margin-top: 0rem;
         margin-bottom: 1rem;
         border-top: 0px solid var(--primary_white);
+    }
+    .footer_copyright{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer_copyright h6{
+        text-align: center;
     }
 }
